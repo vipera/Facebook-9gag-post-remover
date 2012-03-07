@@ -1,0 +1,15 @@
+{
+  "name": "Facebook 9gag post remover",
+  "version": "1.0",
+  "description": "A chrome extension to remove 9gag links from your Facebook news feed.",
+  "icons" : {
+    "48": "no9icon-48.png",
+    "128": "no9icon-128.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.facebook.com/*"],
+    "js": ["no9gag.js"],
+    "run_at": "document_end"
+  }],
+  "update_url": "http://shinyshell.net/no9gag/updates.xml"
+}
